@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as $ from 'jquery';
 
 import './App.css';
+import Header from './components/Header/Header';
 
 
 class App extends React.Component{
@@ -15,13 +16,28 @@ class App extends React.Component{
 
   componentDidMount(){
     console.info('loading data');
+    this.loadData('mockups/cv_data.json');
+  }
+
+  loadData(pathData){
+    $.ajax({
+      url: pathData,
+      dataType: 'json',
+      success: function(data){
+        console.log('loaded data', data);
+        this.setState({pepitoResumeData: data});
+      }.bind(this),
+      error: (xhr, status, error) => {
+        console.error(error);
+      }
+    });
   }
 
   render(){
     return (
       <div className="App">
-        <p>Componente 1</p>
-        <p>Componente 2</p>
+        
+        <Header data={this.state.pepitoResumeData}></Header>
       </div>
     );
   }
