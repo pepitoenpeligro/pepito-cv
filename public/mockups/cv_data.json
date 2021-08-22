@@ -8,8 +8,7 @@
             "city": "Granada, Spain",
             "description": "Software Engineer"
         },
-        "networks": [
-            {
+        "networks": [{
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/gelbevomei",
                 "className": "fa fa-linkedin"
@@ -20,11 +19,71 @@
                 "className": "fa fa-github"
             }
         ],
-        "about":{
-            "description":"I am a computer engineer who loves nature, lifelong learning, physical activity and cooking."
-            
-        }
-        
-    }
+        "about": {
+            "description": "I am a computer engineer who loves nature, lifelong learning, physical activity and cooking."
 
+        },
+        "education": [{
+                "id": 0,
+                "concept": "Computer Science Degree - Grado en Ingeniería Informática",
+                "school": "Granada University - Universidad de Granada, Granada, Spain",
+                "years": "2014-2019",
+                "description": ""
+            },
+            {
+                "id": 1,
+                "concept": "Computer Science Degree - Grado en Ingeniería Informática",
+                "school": "Ostfalia - University of Applied Sciences (Erasmus+)",
+                "years": "2019-2020",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "concept": "Master's Degree in Computer Engineering - Máster en Ingeniería Informática",
+                "school": "Granada University - Universidad de Granada, Granada, Spain",
+                "years": "2020-2021 (Final work still to be presented)",
+                "description": ""
+            }
+        ],
+        "works": [{
+                "id": 0,
+                "concept": "Programming teacher ",
+                "school": "Classgap",
+                "years": "2016-2017",
+                "description": "Class troubleshooting in C++, Java and Python.\n\nCreation of static web pages.\n\nProcessing and p5.js exercises.\n\nSQL queries"
+            },
+            {
+                "id": 1,
+                "concept": "Programming teacher",
+                "school": "Superprof",
+                "years": "2017-2019",
+                "description": "Private classes for the development of native Android (Android Studio and Eclipse) and iOS (Xcode) mobile applications. \n\n Development of Java applications, with Swing and JavaFX. Web Application Development with Java E2EE, JSF, Spring, Hibernate.\n\nDeployment and cloud configurations (EC2, EMR, Lambda, Puppet, Ansible, OpenStack). \n\nDesign, Administration and Maintenance of MySQL, PostgreSQL and MongoDB databases.\n\nCreating neural networks with Tensorflow \n\nContainerisation (Docker) of applications and work environments. \n\nIntegration and continuous deployment tools (Github Actions, Jenkins, CircleCI, Drone)."
+            }
+        ],
+        "skills": [{
+                "name": "Git",
+                "level": "80%"
+            },
+            {
+                "name": "React",
+                "level": "70%"
+            },
+            {
+                "name": "MongoDB",
+                "level": "80%"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "level": "60%"
+            }
+
+        ],
+        "projects": [{
+            "title": "Project 1",
+            "category": "MLo que es",
+            "image": "profile.jpeg",
+            "url": "https://www.google.com"
+        }]
+
+    }
 }
