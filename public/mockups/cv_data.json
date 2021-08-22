@@ -78,12 +78,58 @@
             }
 
         ],
-        "projects": [{
-            "title": "Project 1",
-            "category": "MLo que es",
-            "image": "profile.jpeg",
-            "url": "https://www.google.com"
-        }]
+        "projects": [
+            {
+            "title": "PepitoLearning Android Client",
+            "category": "Android",
+            "image": "pepito_learning_android.png",
+            "url": "https://github.com/pepitoenpeligro/PepitoLearning-Android"
+        },
+        {
+            "title": "PepitoLearning WebApp",
+            "category": "Java WebApp",
+            "image": "pepito_learning_android.png",
+            "url": "https://github.com/pepitoenpeligro/PepitoLearning-EnterpriseApp"
+        },
+        {
+            "title": "Video Control System",
+            "category": "Videoconference",
+            "image": "vcs.png",
+            "url": "https://github.com/pepitoenpeligro/VideoControlSystemNative"
+        },
+        {
+            "title": "DameVeneno",
+            "category": "Audio iOS App of Cristina La Veneno",
+            "image": "veneno_ios.png",
+            "url": "https://github.com/pepitoenpeligro/DameVeneno"
+        },
+        {
+            "title": "PER Exam Trainer",
+            "category": "PER",
+            "image": "per.png",
+            "url": "https://github.com/pepitoenpeligro/testalvclient"
+        },
+        {
+            "title": "Cloudbanking",
+            "category": "Microservices",
+            "image": "cloudbanking.png",
+            "url": "https://github.com/pepitoenpeligro/cloudbanking"
+        },
+        {
+            "title": "Artificial Intelligence Explainable",
+            "category": "AIX",
+            "image": "xai.png",
+            "url": "https://github.com/pepitoenpeligro/mii_sige_diabetes"
+        },
+        {
+            "title": "PuppetLab",
+            "category": "Puppet",
+            "image": "puppet.png",
+            "url": "https://github.com/pepitoenpeligro/puppetLab"
+        }
+    
+        
+    ]
 
     }
 }

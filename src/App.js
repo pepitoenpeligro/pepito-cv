@@ -5,6 +5,7 @@ import * as $ from 'jquery';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Education from './components/Education/Education';
+import Portfolio from './components/Portfolio/Portfolio';
 
 
 class App extends React.Component{
@@ -44,6 +45,7 @@ class App extends React.Component{
         <Header data={this.state.pepitoResumeData}></Header>
         <About  data={this.state.pepitoResumeData}></About>
         <Education  data={this.state.pepitoResumeData}></Education>
+        <Portfolio data={this.state.pepitoResumeData}></Portfolio>
       </div>
     );
   }
