@@ -19,7 +19,12 @@
                 "url": "http://github.com/pepitoenpeligro",
                 "className": "fa fa-github"
             }
-        ]
+        ],
+        "about":{
+            "description":"I am a computer engineer who loves nature, lifelong learning, physical activity and cooking."
+            
+        }
+        
     }
 
 }

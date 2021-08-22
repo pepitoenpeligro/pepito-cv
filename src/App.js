@@ -3,6 +3,7 @@ import * as $ from 'jquery';
 
 // import './App.css';
 import Header from './components/Header/Header';
+import About from './components/About/About';
 
 
 class App extends React.Component{
@@ -40,6 +41,7 @@ class App extends React.Component{
       <div className="App">
         
         <Header data={this.state.pepitoResumeData}></Header>
+        <About  data={this.state.pepitoResumeData}></About>
       </div>
     );
   }
