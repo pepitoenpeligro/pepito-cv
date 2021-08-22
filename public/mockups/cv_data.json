@@ -1,10 +1,25 @@
 {
-    "SPANISH":{
+    "SPANISH": {
         "general": {
             "name": "José Antonio",
             "surname": "Córdoba Gómez",
             "email": "joseant.cg@outlook.com",
-            "github": "@pepitoenpeligro"
-        }
+            "github": "@pepitoenpeligro",
+            "city": "Granada, Spain",
+            "description": "Software Engineer"
+        },
+        "networks": [
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/gelbevomei",
+                "className": "fa fa-linkedin"
+            },
+            {
+                "name": "github",
+                "url": "http://github.com/pepitoenpeligro",
+                "className": "fa fa-github"
+            }
+        ]
     }
+
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as $ from 'jquery';
 
-import './App.css';
+// import './App.css';
 import Header from './components/Header/Header';
 
 
@@ -19,6 +19,7 @@ class App extends React.Component{
     this.loadData('mockups/cv_data.json');
   }
 
+
   loadData(pathData){
     $.ajax({
       url: pathData,
@@ -32,6 +33,7 @@ class App extends React.Component{
       }
     });
   }
+
 
   render(){
     return (
