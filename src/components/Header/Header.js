@@ -1,5 +1,7 @@
 
 import React from 'react';
+
+import TypeWriterEffect from 'react-typewriter-effect';
 // import './Header.css';
 
 class Header extends React.Component {
@@ -35,10 +37,31 @@ class Header extends React.Component {
 
                 <div className="row banner">
                     <div className="banner-text">
-                        
-                        {this.props.data.SPANISH && <h1 className="responsive-headline">I'm {this.props.data.SPANISH.general.name}</h1>}
-                        {this.props.data.SPANISH && <h3>I'm {this.props.data.SPANISH.general.city} based. {this.props.data.SPANISH.general.description}</h3>}
-                        
+
+                        {/* {this.props.data.SPANISH && <h1 className="responsive-headline">I'm {this.props.data.SPANISH.general.name}</h1>} */}
+                        {this.props.data.SPANISH && <h3><TypeWriterEffect
+                            textStyle={{
+                                color: 'white',
+                                fontWeight: 500,
+                                textAlign: 'center'
+                            }}
+                            startDelay={1000}
+                            cursorColor="#0F9095"
+                            multiText={[
+                                `I'm ${this.props.data.SPANISH.general.name}`,
+                                `But you can call me: ${this.props.data.SPANISH.general.shortname}`,
+                                `I'm ${this.props.data.SPANISH.general.city} based.`,
+                                `I work as a ${this.props.data.SPANISH.general.description}`,
+                                'But I am easily adaptable to all kinds of tasks.',
+                                `And this is ${this.props.data.SPANISH.general.github}'s CV`,
+                            ]}
+                            multiTextDelay={1800}
+                            typeSpeed={50}
+                        /></h3>}
+
+
+                        {/* {this.props.data.SPANISH && <h3>I'm {this.props.data.SPANISH.general.city} based. {this.props.data.SPANISH.general.description}</h3>} */}
+
                         <hr />
                         <ul className="social">
                             {listItems}

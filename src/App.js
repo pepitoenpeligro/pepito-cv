@@ -1,13 +1,17 @@
 import React from 'react';
 import * as $ from 'jquery';
 import html2canvas from 'html2canvas';
+import { makeStyles } from '@material-ui/core/styles';
 import { jsPDF } from "jspdf";
+
+
 
 // import './App.css';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Education from './components/Education/Education';
 import Portfolio from './components/Portfolio/Portfolio';
+import { CircularProgress, Modal } from '@material-ui/core';
 
 
 
@@ -17,9 +21,24 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pepitoResumeData: {}
+      pepitoResumeData: {},
+      loading: false,
+      open: false
     }
   };
+
+
+
+  useStyles = makeStyles((theme) => ({
+    paper: {
+      position: 'absolute',
+      width: 400,
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+    },
+  }));
 
   componentDidMount() {
     console.info('loading data');
@@ -40,8 +59,8 @@ class App extends React.Component {
     });
   }
 
-  generatePDF() {
-    alert("Generating");
+  generatePDF = () => {
+    this.setState({ loading: true, open: true });
     const input = document.getElementById('root');
     html2canvas(input, { scrollY: -window.scrollY })
       .then((canvas) => {
@@ -62,7 +81,11 @@ class App extends React.Component {
           heightLeft -= pageHeight;
         }
         doc.save('cv_pepitoenpeligro.pdf');
+        this.setState({ loading: false, open: false });
       });
+  }
+  handleClose = () => {
+    this.setStat({ open: false });
   }
 
 
@@ -70,22 +93,44 @@ class App extends React.Component {
     return (
       <div className="App">
 
+
+        
         <Header data={this.state.pepitoResumeData}></Header>
+        
         <About data={this.state.pepitoResumeData}></About>
         <Education data={this.state.pepitoResumeData}></Education>
         <Portfolio data={this.state.pepitoResumeData}></Portfolio>
         <div className="footer">
-        
+
+
           <div className="row">
             <br />
             <br />
             <br />
-            <button onClick={this.generatePDF}>
+            <button onClick={this.generatePDF} className="centering">
               Generate PDF-CV
             </button>
             <br />
             <br />
             <br />
+
+            <Modal
+              open={this.state.open}
+              onClose={this.handleClose}
+              aria-labelledby="simple-modal-title"
+              aria-describedby="simple-modal-description"
+            >
+              <div className="modal-custom" >
+                <h2 id="simple-modal-title">PDF is generating, please wait :)</h2>
+                <div className="circularProgress">
+
+                  {this.state.loading && <CircularProgress />}
+                </div>
+
+
+              </div>
+
+            </Modal>
 
           </div>
         </div>
