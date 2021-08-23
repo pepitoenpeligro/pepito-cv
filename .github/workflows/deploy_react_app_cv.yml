@@ -1,0 +1,33 @@
+name: Deploy CV with gh-pages
+
+
+on:
+  push:
+    branches:
+      - "master"
+      - "main"
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
+    steps:
+      - name: Checkout Step
+        uses: actions/checkout@v1
+
+      - name: Install dependecies
+        run:  npm install 
+      
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages # Branch on which I will deploy
+          folder: build
