@@ -4,7 +4,7 @@ const About = (props) => {
         <section id="about">
             <div className="row">
                 <div className="three columns">
-                    <img className="profile-pic" src="images/pic.jpeg" />
+                    <img className="profile-pic" src="images/pic.jpeg" alt="profilepic"/>
                 </div>
                 <div className="nine columns main-col">
                 {/* {JSON.stringify(props)} */}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import * as $ from 'jquery';
 import html2canvas from 'html2canvas';
 import { jsPDF } from "jspdf";
@@ -32,7 +32,6 @@ class App extends React.Component {
       url: pathData,
       dataType: 'json',
       success: function (data) {
-        console.log('loaded data', data);
         this.setState({ pepitoResumeData: data });
       }.bind(this),
       error: (xhr, status, error) => {

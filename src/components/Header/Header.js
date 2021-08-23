@@ -1,15 +1,9 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 // import './Header.css';
 
 class Header extends React.Component {
 
-    constructor(props) {
-        super(props);
-
-
-
-    };
 
     async componentDidMount() {
 
@@ -18,12 +12,7 @@ class Header extends React.Component {
 
     render() {
         if (this.props.data.SPANISH) {
-            console.info('algo', this.props.data.SPANISH.networks);
-            var networks = this.props.data.SPANISH.networks.map(function (network) {
-                return <li key={network.name}><a href={network.url}></a></li>
-            })
             var listItems = this.props.data.SPANISH.networks.map((d) => <li key={d.name}><a href={d.url}><i className={d.className}></i></a></li>);
-            console.log(listItems);
         }
 
         return (
