@@ -76,6 +76,7 @@ class App extends React.Component {
         <Education data={this.state.pepitoResumeData}></Education>
         <Portfolio data={this.state.pepitoResumeData}></Portfolio>
         <div className="footer">
+        
           <div className="row">
             <br />
             <br />
