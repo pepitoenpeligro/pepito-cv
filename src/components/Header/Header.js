@@ -36,7 +36,8 @@ class Header extends React.Component {
                 </nav>
 
                 <div className="row banner">
-                    <div className="banner-text">
+                    <div className="banner-text">   
+                        {this.props.data.SPANISH && console.log('Data typewrite', this.props.data.SPANISH.general)}
 
                         {/* {this.props.data.SPANISH && <h1 className="responsive-headline">I'm {this.props.data.SPANISH.general.name}</h1>} */}
                         {this.props.data.SPANISH && <h3><TypeWriterEffect
