@@ -1020,3 +1020,47 @@ button{
    margin: auto;
    
 }
+
+.modal-custom{
+   position: 'absolute';
+   background-color: #11ABB0;
+   width: 50%;
+   height: 30%;
+   overflow: auto;
+   margin: auto;
+   position: absolute;
+   top: 50%;
+   bottom: 50%;
+   left:25%;
+   right: 25%;
+   /* border: solid black; */
+   
+}
+
+.modal-custom h2{
+   color: white;
+   text-align: center;
+   vertical-align:middle;
+}
+
+.circularProgress{
+   text-align: center;
+   vertical-align:middle;
+   /* padding-top:10%; */
+   /* width: 50%;
+   height: 50%;
+   text-align: center;
+   vertical-align:middle; */
+   /* display:flex;
+   align-items: center;
+   justify-content: center; */
+}
+
+.centering{
+
+   margin:0 auto;
+   display:block;
+   padding-left: 7%;
+   padding-right: 7%;
+
+}
