@@ -1,0 +1,22 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+.div1 {
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: turquoise;
+}
+.div2 {
+    grid-area: 1 / 2 / 2 / 6;
+    background-color: violet;
+}
+.div3 {
+    grid-area: 2 / 2 / 6 / 6;
+}
+
+.filter-green{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}

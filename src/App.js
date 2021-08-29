@@ -3,7 +3,7 @@ import * as $ from 'jquery';
 import html2canvas from 'html2canvas';
 import { makeStyles } from '@material-ui/core/styles';
 import { jsPDF } from "jspdf";
-
+import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
 
 
 // import './App.css';
@@ -12,6 +12,7 @@ import About from './components/About/About';
 import Education from './components/Education/Education';
 import Portfolio from './components/Portfolio/Portfolio';
 import { CircularProgress, Modal } from '@material-ui/core';
+import PDFCV from './components/PDFCV/PDFCV';
 
 
 
@@ -23,7 +24,8 @@ class App extends React.Component {
     this.state = {
       pepitoResumeData: {},
       loading: false,
-      open: false
+      open: false,
+      isShowingPDF: false
     }
   };
 
@@ -43,6 +45,10 @@ class App extends React.Component {
   componentDidMount() {
     console.info('loading data');
     this.loadData('mockups/cv_data.json');
+  }
+
+  showPDF = () => {
+    this.setState({ isShowingPDF: !this.state.isShowingPDF});
   }
 
 
@@ -82,21 +88,19 @@ class App extends React.Component {
         }
         doc.save('cv_pepitoenpeligro.pdf');
         this.setState({ loading: false, open: false });
+
       });
   }
   handleClose = () => {
-    this.setStat({ open: false });
+    this.setState({ open: false });
   }
+  
 
 
   render() {
     return (
       <div className="App">
-
-
-        
         <Header data={this.state.pepitoResumeData}></Header>
-        
         <About data={this.state.pepitoResumeData}></About>
         <Education data={this.state.pepitoResumeData}></Education>
         <Portfolio data={this.state.pepitoResumeData}></Portfolio>
@@ -104,12 +108,36 @@ class App extends React.Component {
 
 
           <div className="row">
+
             <br />
             <br />
             <br />
-            <button onClick={this.generatePDF} className="centering">
-              Generate PDF-CV
+
+
+            <button onClick={this.showPDF} className="centering">
+              Show inline CV pdf
             </button>
+
+            <br />
+            <br />
+            <br />
+
+
+            <button className="centering">
+              <PDFDownloadLink
+                style={{ display: 'table', 'margin': '0 auto', color: 'white', textAlign: 'center' }}
+                document={<PDFCV data={this.state.pepitoResumeData} />} fileName="cv_pepitoenpeligro.pdf">
+                {({ blob, url, loadingA, error }) => (loadingA ? 'Loading document...' : ' Download CV as PDF file ')}
+              </PDFDownloadLink>
+            </button>
+            <br />
+            <br />
+            <br />
+
+            <button onClick={this.generatePDF} className="centering">
+              Download Screenshot CV
+            </button>
+
             <br />
             <br />
             <br />
@@ -134,7 +162,25 @@ class App extends React.Component {
 
           </div>
         </div>
+        {this.state.isShowingPDF && <div className="row">
+          <PDFViewer className="centering" style={{ width: '800px', height: '1000px' }}>
+            <PDFCV data={this.state.pepitoResumeData}></PDFCV>
+          </PDFViewer>
+
+        </div>
+        }
+        {/* <div className="row " >
+          <button className="centering">
+            <PDFDownloadLink
+              style={{ display: 'table', 'margin': '0 auto', textAlign: 'center' }}
+              document={<PDFCV data={this.state.pepitoResumeData} />} fileName="fee_acceptance.pdf">
+              {({ blob, url, loadingA, error }) => (loadingA ? 'Loading document...' : 'Download now!')}
+            </PDFDownloadLink>
+          </button>
+        </div> */}
+
       </div>
+
 
     );
   }
