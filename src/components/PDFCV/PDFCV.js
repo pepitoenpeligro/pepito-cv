@@ -1,34 +1,15 @@
 import { Page, Text, Image, View, Document, StyleSheet, Font, Canvas } from '@react-pdf/renderer';
-import { PDFViewer } from '@react-pdf/renderer';
+
 import './PDFCV.css';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+
 import ProgressBar from './ProgressBar';
-import Education from '../Education/Education';
+
 import Experience from './Experience';
-import Title from './Title';
+
 
 
 
 Font.register({ family: 'opensans-bold', src: 'css/fonts/opensans/OpenSans-Bold-webfont.ttf' });
-
-const page1Style = StyleSheet.create({
-    body: {
-        backgroundColor: 'blue'
-    },
-    pageNumber: {
-        position: 'absolute',
-        fontSize: 12,
-        bottom: 30,
-        left: 0,
-        right: 0,
-        textAlign: 'center',
-        color: 'blue',
-    },
-    image: {
-        marginVertical: 15
-    }
-})
 
 const cvStyle = StyleSheet.create({
     div1: {

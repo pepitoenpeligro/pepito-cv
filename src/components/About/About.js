@@ -13,13 +13,16 @@ const About = (props) => {
                     <br/>
                     <br/>
 
-                    <div className="row">
+                    <h2>Contact Details</h2>
+                            <p>You can request my phone number through my LinkedIn profile</p>
+
+                    {/* <div className="row">
                         <div className="columns contact-details">
                             <h2>Contact Details</h2>
                             <p>You can request my phone number through my LinkedIn profile</p>
                         </div>
                         
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
