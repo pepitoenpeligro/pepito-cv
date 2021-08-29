@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/pepito-cv/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/pepito-cv/static/js/main.231d4304.chunk.js",
-    "main.js.map": "/pepito-cv/static/js/main.231d4304.chunk.js.map",
-    "runtime-main.js": "/pepito-cv/static/js/runtime-main.00c81f9e.js",
-    "runtime-main.js.map": "/pepito-cv/static/js/runtime-main.00c81f9e.js.map",
-    "static/js/2.9c881db3.chunk.js": "/pepito-cv/static/js/2.9c881db3.chunk.js",
-    "static/js/2.9c881db3.chunk.js.map": "/pepito-cv/static/js/2.9c881db3.chunk.js.map",
-    "static/js/3.d0a6f813.chunk.js": "/pepito-cv/static/js/3.d0a6f813.chunk.js",
-    "static/js/3.d0a6f813.chunk.js.map": "/pepito-cv/static/js/3.d0a6f813.chunk.js.map",
-    "static/js/4.399edc0e.chunk.js": "/pepito-cv/static/js/4.399edc0e.chunk.js",
-    "static/js/4.399edc0e.chunk.js.map": "/pepito-cv/static/js/4.399edc0e.chunk.js.map",
-    "static/js/5.2ec35ce1.chunk.js": "/pepito-cv/static/js/5.2ec35ce1.chunk.js",
-    "static/js/5.2ec35ce1.chunk.js.map": "/pepito-cv/static/js/5.2ec35ce1.chunk.js.map",
+    "main.css": "/pepito-cv/static/css/main.9e655881.chunk.css",
+    "main.js": "/pepito-cv/static/js/main.fdd3f60a.chunk.js",
+    "main.js.map": "/pepito-cv/static/js/main.fdd3f60a.chunk.js.map",
+    "runtime-main.js": "/pepito-cv/static/js/runtime-main.36c42246.js",
+    "runtime-main.js.map": "/pepito-cv/static/js/runtime-main.36c42246.js.map",
+    "static/js/2.4dc34cb2.chunk.js": "/pepito-cv/static/js/2.4dc34cb2.chunk.js",
+    "static/js/2.4dc34cb2.chunk.js.map": "/pepito-cv/static/js/2.4dc34cb2.chunk.js.map",
+    "static/js/3.bd5e29ca.chunk.js": "/pepito-cv/static/js/3.bd5e29ca.chunk.js",
+    "static/js/3.bd5e29ca.chunk.js.map": "/pepito-cv/static/js/3.bd5e29ca.chunk.js.map",
+    "static/js/4.0e7229bf.chunk.js": "/pepito-cv/static/js/4.0e7229bf.chunk.js",
+    "static/js/4.0e7229bf.chunk.js.map": "/pepito-cv/static/js/4.0e7229bf.chunk.js.map",
+    "static/js/5.309b230b.chunk.js": "/pepito-cv/static/js/5.309b230b.chunk.js",
+    "static/js/5.309b230b.chunk.js.map": "/pepito-cv/static/js/5.309b230b.chunk.js.map",
     "index.html": "/pepito-cv/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/pepito-cv/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.9c881db3.chunk.js.LICENSE.txt": "/pepito-cv/static/js/2.9c881db3.chunk.js.LICENSE.txt",
-    "static/js/3.d0a6f813.chunk.js.LICENSE.txt": "/pepito-cv/static/js/3.d0a6f813.chunk.js.LICENSE.txt",
-    "static/js/4.399edc0e.chunk.js.LICENSE.txt": "/pepito-cv/static/js/4.399edc0e.chunk.js.LICENSE.txt"
+    "static/css/main.9e655881.chunk.css.map": "/pepito-cv/static/css/main.9e655881.chunk.css.map",
+    "static/js/2.4dc34cb2.chunk.js.LICENSE.txt": "/pepito-cv/static/js/2.4dc34cb2.chunk.js.LICENSE.txt",
+    "static/js/3.bd5e29ca.chunk.js.LICENSE.txt": "/pepito-cv/static/js/3.bd5e29ca.chunk.js.LICENSE.txt",
+    "static/js/4.0e7229bf.chunk.js.LICENSE.txt": "/pepito-cv/static/js/4.0e7229bf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.00c81f9e.js",
-    "static/js/3.d0a6f813.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.231d4304.chunk.js"
+    "static/js/runtime-main.36c42246.js",
+    "static/js/2.4dc34cb2.chunk.js",
+    "static/css/main.9e655881.chunk.css",
+    "static/js/main.fdd3f60a.chunk.js"
   ]
 }

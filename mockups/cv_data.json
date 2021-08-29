@@ -5,6 +5,8 @@
             "surname": "Córdoba Gómez",
             "email": "joseant.cg@outlook.com",
             "github": "@pepitoenpeligro",
+            "linkedin": "@gelbevomei",
+            "trailhead": "@pepitoenpeligro",
             "city": "Granada, Spain",
             "description": "Software Engineer, DevOps, Cloud Architect",
             "shortname": "pepito"
@@ -12,12 +14,17 @@
         "networks": [{
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/gelbevomei",
-                "className": "fa fa-linkedin"
+                "className": "fab fa-linkedin"
             },
             {
                 "name": "github",
                 "url": "http://github.com/pepitoenpeligro",
-                "className": "fa fa-github"
+                "className": "fab fa-github"
+            },
+            {
+                "name": "trailhead",
+                "url": "https://trailblazer.me/id/pepitoenpeligro",
+                "className": "fab fa-salesforce"
             }
         ],
         "about": {
