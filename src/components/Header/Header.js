@@ -35,8 +35,8 @@ class Header extends React.Component {
 
                 </nav>
 
-                <div className="row banner">
-                    <div className="banner-text">   
+                <div className="row banner" style={{margin: 'auto'}}>
+                    <div className="banner-text" style={{textAlign: 'center'}}>   
                         {this.props.data.SPANISH && console.log('Data typewrite', this.props.data.SPANISH.general)}
 
                         {/* {this.props.data.SPANISH && <h1 className="responsive-headline">I'm {this.props.data.SPANISH.general.name}</h1>} */}
@@ -44,7 +44,9 @@ class Header extends React.Component {
                             textStyle={{
                                 color: 'white',
                                 fontWeight: 500,
-                                textAlign: 'center'
+                                textAlign: 'center',
+
+                                fontSize: '2.5em',
                             }}
                             startDelay={1000}
                             cursorColor="#0F9095"
@@ -54,7 +56,7 @@ class Header extends React.Component {
                                 `I'm ${this.props.data.SPANISH.general.city} based.`,
                                 `I work as a ${this.props.data.SPANISH.general.description}`,
                                 'But I am easily adaptable to all kinds of tasks.',
-                                `And this is ${this.props.data.SPANISH.general.github}'s CV`,
+                                `And this is \n ${this.props.data.SPANISH.general.github}'s CV`,
                             ]}
                             multiTextDelay={1800}
                             typeSpeed={50}
