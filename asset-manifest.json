@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pepito-cv/static/css/main.1359096b.chunk.css",
+    "main.css": "/pepito-cv/static/css/main.de83ad84.chunk.css",
     "main.js": "/pepito-cv/static/js/main.eab4dd62.chunk.js",
     "runtime-main.js": "/pepito-cv/static/js/runtime-main.6ddc41f9.js",
     "static/js/2.253ae0f5.chunk.js": "/pepito-cv/static/js/2.253ae0f5.chunk.js",
@@ -15,7 +15,7 @@
   "entrypoints": [
     "static/js/runtime-main.6ddc41f9.js",
     "static/js/2.253ae0f5.chunk.js",
-    "static/css/main.1359096b.chunk.css",
+    "static/css/main.de83ad84.chunk.css",
     "static/js/main.eab4dd62.chunk.js"
   ]
 }

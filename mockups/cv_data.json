@@ -53,32 +53,67 @@
                 "description": ""
             }
         ],
-        "works": [{
+        "works": [
+            {
                 "id": 0,
-                "concept": "Programming teacher ",
-                "school": "Classgap",
-                "years": "2016-2017",
-                "description": "Class troubleshooting in C++, Java and Python.\n\nCreation of static web pages.\n\nProcessing and p5.js exercises.\n\nSQL queries"
+                "concept": "Software engineer in Cloud Team",
+                "school": "Wazuh",
+                "years": "October 2021 - now",
+                "description": "Development of internal tools (python, bash) for cloud infrastructure maintenance (instances, load balancers, EBS, VPCs, S3, ApiGateway, Lambda) on aws and kubernetes.  Design and reimplementation of internal management APIs. Monitoring tasks. Elastic Stack operations."
             },
+            
             {
                 "id": 1,
                 "concept": "Programming teacher",
                 "school": "Superprof",
                 "years": "2017-2019",
                 "description": "Private classes for the development of native Android (Android Studio and Eclipse) and iOS (Xcode) mobile applications. \n\n Development of Java applications, with Swing and JavaFX. Web Application Development with Java E2EE, JSF, Spring, Hibernate.\n\nDeployment and cloud configurations (EC2, EMR, Lambda, Puppet, Ansible, OpenStack). \n\nDesign, Administration and Maintenance of MySQL, PostgreSQL and MongoDB databases.\n\nCreating neural networks with Tensorflow \n\nContainerisation (Docker) of applications and work environments. \n\nIntegration and continuous deployment tools (Github Actions, Jenkins, CircleCI, Drone)."
-            }
-        ],
-        "skills": [{
-                "name": "Git",
-                "level": "80%"
             },
             {
+                "id": 2,
+                "concept": "Programming teacher ",
+                "school": "Classgap",
+                "years": "2016-2017",
+                "description": "Class troubleshooting in C++, Java and Python.\n\nCreation of static web pages.\n\nProcessing and p5.js exercises.\n\nSQL queries"
+            }
+        ],
+        "skills": [
+            {
+                "name": "Python",
+                "level": "100%"
+            },
+            {
+                "name": "Java",
+                "level": "90%"
+            },
+            {
+                "name": "Git",
+                "level": "90%"
+            },
+            {
+                "name": "NodeJS",
+                "level": "80%"
+            },
+
+            {
                 "name": "React",
-                "level": "70%"
+                "level": "80%"
             },
             {
                 "name": "MongoDB",
-                "level": "80%"
+                "level": "70%"
+            },
+            {
+                "name": "MySQL",
+                "level": "70%"
+            },
+            {
+                "name": "Android",
+                "level": "70%"
+            },
+            {
+                "name": "Swift",
+                "level": "60%"
             },
             {
                 "name": "Adobe Illustrator",
@@ -135,8 +170,6 @@
             "image": "puppet.png",
             "url": "https://github.com/pepitoenpeligro/puppetLab"
         }
-    
-        
     ]
 
     }
