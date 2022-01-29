@@ -25,6 +25,16 @@
                 "name": "trailhead",
                 "url": "https://trailblazer.me/id/pepitoenpeligro",
                 "className": "fab fa-salesforce"
+            },
+            {
+                "name": "youtube",
+                "url": "https://www.youtube.com/channel/UC3ymxqAaLBWAHCO0thm9a9Q",
+                "className": "fab fa-youtube"
+            },
+            {
+                "name": "stackoverflow",
+                "url": "https://stackoverflow.com/story/pepitoenpeligro",
+                "className": "fab fa-stack-overflow"
             }
         ],
         "about": {
