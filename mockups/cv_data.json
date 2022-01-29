@@ -133,53 +133,84 @@
         ],
         "projects": [
             {
-            "title": "PepitoLearning Android Client",
-            "category": "Android",
-            "image": "pepito_learning_android.png",
-            "url": "https://github.com/pepitoenpeligro/PepitoLearning-Android"
-        },
-        {
-            "title": "PepitoLearning WebApp",
-            "category": "Java WebApp",
-            "image": "pepito_learning_android.png",
-            "url": "https://github.com/pepitoenpeligro/PepitoLearning-EnterpriseApp"
-        },
-        {
-            "title": "Video Control System",
-            "category": "Videoconference",
-            "image": "vcs.png",
-            "url": "https://github.com/pepitoenpeligro/VideoControlSystemNative"
-        },
-        {
-            "title": "DameVeneno",
-            "category": "Audio iOS App of Cristina La Veneno",
-            "image": "veneno_ios.png",
-            "url": "https://github.com/pepitoenpeligro/DameVeneno"
-        },
-        {
-            "title": "PER Exam Trainer",
-            "category": "PER",
-            "image": "per.png",
-            "url": "https://github.com/pepitoenpeligro/testalvclient"
-        },
-        {
-            "title": "Cloudbanking",
-            "category": "Microservices",
-            "image": "cloudbanking.png",
-            "url": "https://github.com/pepitoenpeligro/cloudbanking"
-        },
-        {
-            "title": "Artificial Intelligence Explainable",
-            "category": "AIX",
-            "image": "xai.png",
-            "url": "https://github.com/pepitoenpeligro/mii_sige_diabetes"
-        },
-        {
-            "title": "PuppetLab",
-            "category": "Puppet",
-            "image": "puppet.png",
-            "url": "https://github.com/pepitoenpeligro/puppetLab"
-        }
+                "title": "PepitoLearning WebApp",
+                "category": "Enterprise Java WebApp for e-learning",
+                "image": "pepitolearning_webapp.png",
+                "url": "https://github.com/pepitoenpeligro/PepitoLearning-EnterpriseApp"
+            },
+            {
+                "title": "PepitoLearning Android Client",
+                "category": "Android client for PepitoLearning WebApp",
+                "image": "pepitolearning_android.png",
+                "url": "https://github.com/pepitoenpeligro/PepitoLearning-Android"
+            },
+
+            {
+                "title": "Cloudbanking Web",
+                "category": "Multiple microservices for manager your economy",
+                "image": "cloudbanking.png",
+                "url": "https://github.com/pepitoenpeligro/cloudbanking"
+            },
+            {
+                "title": "Cloudbanking Android",
+                "category": "Android client Cloudbanking Webapp (isolated)",
+                "image": "cloudbanking_android.png",
+                "url": "https://github.com/pepitoenpeligro/CloudBankingAndroid"
+            },
+            {
+                "title": "Video Control System",
+                "category": "Skype clone for 2 peers",
+                "image": "vcs.png",
+                "url": "https://github.com/pepitoenpeligro/VideoControlSystemNative"
+            },
+            {
+                "title": "Machine Learning & Deep Learning for SIGE",
+                "category": "Machine learning and deep learning exercises on higgs boson datasets and fake news from reddit",
+                "image": "sige_icon.png",
+                "url": "https://github.com/pepitoenpeligro/mii_sige_2021"
+            },
+            {
+                "title": "Big Data Spark",
+                "category": "Big Data Analysis over Human Proteins with Apache Spark",
+                "image": "mii_spark.png",
+                "url": "https://github.com/pepitoenpeligro/mii_big_data_spark"
+            },
+            {
+                "title": "Airflow CI/CD",
+                "category": "Task orchestration with Apache Airflow",
+                "image": "mii_apache_airflow.png",
+                "url": "https://github.com/pepitoenpeligro/mii_apache_airflow"
+            },
+            {
+                "title": "Trails",
+                "category": "Web application to manage trails made in Django, Mongo and Reactjs",
+                "image": "mii_ssbw_icon.png",
+                "url": "https://github.com/pepitoenpeligro/mii_ssbw"
+            },
+            {
+                "title": "DameVeneno",
+                "category": "Audio iOS App of Cristina La Veneno",
+                "image": "veneno_ios.png",
+                "url": "https://github.com/pepitoenpeligro/DameVeneno"
+            },
+            {
+                "title": "Recreational Boating Exams - PER",
+                "category": "Platform to train for the Junta de Andalucía recreational boating exams.",
+                "image": "per.png",
+                "url": "https://github.com/pepitoenpeligro/testalvclient"
+            },
+            {
+                "title": "Artificial Intelligence Explainable",
+                "category": "AIX",
+                "image": "xai.png",
+                "url": "https://github.com/pepitoenpeligro/mii_sige_diabetes"
+            },
+            {
+                "title": "PuppetLab",
+                "category": "Puppet",
+                "image": "puppet.png",
+                "url": "https://github.com/pepitoenpeligro/puppetLab"
+            }
     ]
 
     }
