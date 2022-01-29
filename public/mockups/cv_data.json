@@ -56,10 +56,10 @@
         "works": [
             {
                 "id": 0,
-                "concept": "Software developer in Cloud Team",
+                "concept": "Software engineer in Cloud Team",
                 "school": "Wazuh",
                 "years": "October 2021 - now",
-                "description": "Development of internal tools (python, bash) for cloud infrastructure maintenance (instances, load balancers, EBS, VPCs, S3, ApiGateway) on aws and kubernetes.  Design and reimplementation of internal management APIs. Monitoring tasks. Elastic Stack operations."
+                "description": "Development of internal tools (python, bash) for cloud infrastructure maintenance (instances, load balancers, EBS, VPCs, S3, ApiGateway, Lambda) on aws and kubernetes.  Design and reimplementation of internal management APIs. Monitoring tasks. Elastic Stack operations."
             },
             
             {
