@@ -14,7 +14,7 @@ const Portfolio = (props) => {
                             <div key={proyectItem.title} className="columns portfolio-item">
                                 <div className="item-wrap">
                                     <a href={proyectItem.url} title={proyectItem.title}>
-                                        <img alt={proyectItem.title} src={'images/portfolio/'+proyectItem.image} />
+                                        <img alt={proyectItem.title} src={process.env.PUBLIC_URL +'/images/portfolio/'+proyectItem.image} />
                                         <div className="overlay">
                                             <div className="portfolio-item-meta">
                                                 <h5>{proyectItem.title}</h5>
