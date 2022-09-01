@@ -8,7 +8,7 @@
             "linkedin": "@gelbevomei",
             "trailhead": "@pepitoenpeligro",
             "city": "Granada, Spain",
-            "description": "Software Engineer, DevOps, Cloud Architect",
+            "description": "Software Engineer, Cloud DevOps",
             "shortname": "pepito"
         },
         "networks": [{
@@ -69,7 +69,7 @@
                 "concept": "Software engineer in Cloud Team",
                 "school": "Wazuh",
                 "years": "October 2021 - now",
-                "description": "Development of internal tools (python, bash) for cloud infrastructure maintenance (instances, load balancers, EBS, VPCs, S3, ApiGateway, Lambda) on aws and kubernetes.  Design and reimplementation of internal management APIs. Monitoring tasks. Elastic Stack operations."
+                "description": "Development of internal tools (python, bash) for cloud infrastructure maintenance (EC2 instances, load balancers, EBS, VPCs, Route53 S3, ApiGateway, Lambda) on AWS and kubernetes (EKS + kubectl + k8s python). \n Analyze, design and implement tasks automation and documentations of the Wazuh Cloud Servce. \nDesign and reimplementation of internal management APIs. \nMonitoring and tasks with Grafana, Promehetheus and Implementing alerting tasks with Lambda functions. \nRespond, resolve and scalete incidents.  \nElastic Stack operations (indice and clusters operations). \nOn-Call duties. \nManage users, groups, policies and roles for internal operations with IAM. \nRedesign and update Cloudformation stacks. \nMentoring and Onboarding of new team members. \nActively participate in the Wazuh Community. \nCollaborate with the entire Wazuh organization to solve issues related to orchestation and management tools and Cloud insights"
             },
             
             {
