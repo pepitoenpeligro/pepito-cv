@@ -33,7 +33,7 @@
             },
             {
                 "name": "stackoverflow",
-                "url": "https://stackoverflow.com/story/pepitoenpeligro",
+                "url": "https://stackoverflow.com/users/18066841/pepitoenpeligro",
                 "className": "fab fa-stack-overflow"
             }
         ],
@@ -104,7 +104,6 @@
                 "name": "NodeJS",
                 "level": "80%"
             },
-
             {
                 "name": "React",
                 "level": "80%"
