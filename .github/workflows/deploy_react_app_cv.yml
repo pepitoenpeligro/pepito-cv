@@ -14,11 +14,11 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [16.x]
 
     steps:
       - name: Checkout Step
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
 
       - name: Install dependecies
         run:  npm install 
