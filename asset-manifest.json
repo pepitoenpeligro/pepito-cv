@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/pepito-cv/static/css/main.de83ad84.chunk.css",
-    "main.js": "/pepito-cv/static/js/main.b9fff6b2.chunk.js",
-    "runtime-main.js": "/pepito-cv/static/js/runtime-main.6ddc41f9.js",
-    "static/js/2.253ae0f5.chunk.js": "/pepito-cv/static/js/2.253ae0f5.chunk.js",
-    "static/js/3.6a49b0f7.chunk.js": "/pepito-cv/static/js/3.6a49b0f7.chunk.js",
-    "static/js/4.db1f06c8.chunk.js": "/pepito-cv/static/js/4.db1f06c8.chunk.js",
-    "static/js/5.445d9007.chunk.js": "/pepito-cv/static/js/5.445d9007.chunk.js",
+    "main.css": "/pepito-cv/static/css/main.72fc69a0.css",
+    "main.js": "/pepito-cv/static/js/main.2b72b75b.js",
+    "static/js/162.c673c837.chunk.js": "/pepito-cv/static/js/162.c673c837.chunk.js",
+    "static/js/605.c2131eda.chunk.js": "/pepito-cv/static/js/605.c2131eda.chunk.js",
+    "static/js/745.b60cd7b0.chunk.js": "/pepito-cv/static/js/745.b60cd7b0.chunk.js",
     "index.html": "/pepito-cv/index.html",
-    "static/js/2.253ae0f5.chunk.js.LICENSE.txt": "/pepito-cv/static/js/2.253ae0f5.chunk.js.LICENSE.txt",
-    "static/js/3.6a49b0f7.chunk.js.LICENSE.txt": "/pepito-cv/static/js/3.6a49b0f7.chunk.js.LICENSE.txt",
-    "static/js/4.db1f06c8.chunk.js.LICENSE.txt": "/pepito-cv/static/js/4.db1f06c8.chunk.js.LICENSE.txt"
+    "main.72fc69a0.css.map": "/pepito-cv/static/css/main.72fc69a0.css.map",
+    "main.2b72b75b.js.map": "/pepito-cv/static/js/main.2b72b75b.js.map",
+    "162.c673c837.chunk.js.map": "/pepito-cv/static/js/162.c673c837.chunk.js.map",
+    "605.c2131eda.chunk.js.map": "/pepito-cv/static/js/605.c2131eda.chunk.js.map",
+    "745.b60cd7b0.chunk.js.map": "/pepito-cv/static/js/745.b60cd7b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ddc41f9.js",
-    "static/js/2.253ae0f5.chunk.js",
-    "static/css/main.de83ad84.chunk.css",
-    "static/js/main.b9fff6b2.chunk.js"
+    "static/css/main.72fc69a0.css",
+    "static/js/main.2b72b75b.js"
   ]
 }
