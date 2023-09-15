@@ -7,32 +7,27 @@ on:
       - "master"
       - "main"
 
-permissions:
-  contents: write     
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
       - name: Checkout Step
-        uses: actions/checkout@v4
-      
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.17.1
-          architecture: 'x64'
-          check-latest: false
-          registry-url: 'https://registry.npmjs.org/'
+        uses: actions/checkout@v3
 
       - name: Install dependecies
-        run:  pnpm install 
+        run:  npm install 
       
       - name: Build project
-        run: pnpm build
+        run: npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.4.3
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # Branch on which I will deploy
           folder: build
