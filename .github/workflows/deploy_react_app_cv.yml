@@ -2,32 +2,41 @@ name: Deploy CV with gh-pages
 
 
 on:
+  workflow_dispatch:
+
   push:
     branches:
       - "master"
       - "main"
 
 
+permissions:
+  contents: write     
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
       - name: Checkout Step
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.17.1
+          architecture: 'x64'
+          check-latest: false
+          registry-url: 'https://registry.npmjs.org/'
 
       - name: Install dependecies
-        run:  npm install 
+        run:  pnpm install 
       
       - name: Build project
-        run: npm run build
+        run: pnpm build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages # Branch on which I will deploy
           folder: build

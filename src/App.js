@@ -1,30 +1,19 @@
 import React from 'react';
 import * as $ from 'jquery';
 import html2canvas from 'html2canvas';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@mui/styles';
 import { jsPDF } from "jspdf";
 import { PDFViewer } from '@react-pdf/renderer';
 import { Viewer, Worker } from '@react-pdf-viewer/core';
 
-// import './App.css';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Education from './components/Education/Education';
 import Portfolio from './components/Portfolio/Portfolio';
-import { CircularProgress, Modal } from '@material-ui/core';
-// import PDFCV from './components/PDFCV/PDFCV';
-
-
-
-
-
-
-
+import { CircularProgress, Modal } from '@mui/material';
 
 
 class App extends React.Component {
-
-
 
   constructor(props) {
     super(props);
@@ -37,9 +26,7 @@ class App extends React.Component {
     }
   };
 
-
-
-  useStyles = makeStyles((theme) => ({
+  useStyles = withStyles((theme) => ({
     paper: {
       position: 'absolute',
       width: 400,
@@ -134,14 +121,10 @@ class App extends React.Component {
             <br />
             <br />
 
-            <a href={'assets/CV.pdf'} download="CV_joseantoniocordoba.pdf">
+            {/* <a href={'assets/CV.pdf'} download="cv_jose.pdf"> */}
+            <a href={`${process.env.PUBLIC_URL}/assets/CV.pdf`} download="cv_joseac.pdf">
               <button className="centering">Download CV PDF
 
-                {/* <PDFDownloadLink
-                style={{ display: 'table', 'margin': '0 auto', color: 'white', textAlign: 'center' }}
-                document={<PDFCV data={this.state.pepitoResumeData} />} fileName="cv_pepitoenpeligro.pdf">
-                {({ blob, url, loadingA, error }) => (loadingA ? 'Loading document...' : ' Download CV as PDF file ')}
-              </PDFDownloadLink> */}
               </button>
             </a>
             <br />
@@ -177,11 +160,8 @@ class App extends React.Component {
           </div>
         </div>
         {this.state.isShowingPDF && <div className="row">
-          {/* <PDFViewer className="centering" style={{ width: '800px', height: '1000px' }}>
-            <PDFCV data={this.state.pepitoResumeData}></PDFCV>
-          </PDFViewer> */}
-          <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-            <Viewer fileUrl="assets/CV.pdf" />
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.10.111/build/pdf.worker.min.js">
+            <Viewer fileUrl={`${process.env.PUBLIC_URL}/assets/CV.pdf`} />
           </Worker>
 
 
@@ -196,15 +176,6 @@ class App extends React.Component {
 
         </div>
         }
-        {/* <div className="row " >
-          <button className="centering">
-            <PDFDownloadLink
-              style={{ display: 'table', 'margin': '0 auto', textAlign: 'center' }}
-              document={<PDFCV data={this.state.pepitoResumeData} />} fileName="fee_acceptance.pdf">
-              {({ blob, url, loadingA, error }) => (loadingA ? 'Loading document...' : 'Download now!')}
-            </PDFDownloadLink>
-          </button>
-        </div> */}
 
       </div>
 
